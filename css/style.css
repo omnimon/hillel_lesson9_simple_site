@@ -1,0 +1,239 @@
+:root {
+    --color-accent: #34547A;
+    --color-title: #000;
+    --color-main: #727272;
+    --color-contrast: #fff;
+    --bg-main: #EEEFF1;
+    --bg-accent: #F9F9F9;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--color-main);
+    background-color: var(--bg-main);
+    line-height: 1.64;
+    display: grid;
+    grid-auto-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-title);
+    font-weight: 500;
+}
+
+.center {
+    padding: 0 calc(50vw - 555px);
+    box-sizing: border-box;
+}
+
+/* btn */
+
+.btn {
+    background: var(--color-accent);
+    color: var(--color-contrast);
+    text-decoration: none;
+    max-width: 225px;
+    width: 100%;
+    min-height: 65px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.btn:hover, .btn:focus {
+    background: var(--color-contrast);
+    color: var(--color-accent);
+}
+
+.btn:active {
+    opacity: .7;
+}
+
+/* btn */
+
+/* header */
+
+.header {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    background: var(--bg-main);
+    position: sticky;
+    top: 0;
+}
+
+/* header */
+
+/* nav */
+
+.nav__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 42px;
+}
+
+.nav__link {
+    color: var(--color-title);
+    /*line-height: 164%;*/
+    line-height: 1.64;;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+    text-decoration: underline;
+}
+
+.nav__link:active {
+opacity: .7;
+}
+
+.nav__link.nav__link--active {
+    color: var(--color-accent);
+    font-weight: 500;
+}
+
+/* offer */
+
+.offer{
+    padding-top: 142px;
+    padding-bottom: 142px;
+}
+.offer__content {
+    max-width: 540px;
+}
+
+.offer__title {
+    font-size: 40px;
+    /*margin-top: 0;*/
+    /*margin-bottom: 60px;*/
+    margin: 0 0 60px;
+}
+.offer_desc {
+    margin: 0 0 60px;
+}
+
+/* offer */
+
+/* about */
+
+.about{
+    background-color: var(--bg-accent);
+    padding-top: 102px;
+    padding-bottom: 142px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about__content {
+    max-width: 540px;
+}
+
+.about__title {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    /*margin-top: 0;*/
+    /*margin-bottom: 60px;*/
+    margin: 0 0 60px;
+}
+.about_desc {
+    margin: 0 0 60px;
+}
+
+/* about */
+
+/* numbers */
+
+.numbers{
+    background: var(--color-accent);
+    padding-top: 102px;
+    padding-bottom: 142px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.numbers__content {
+    max-width: 540px;
+}
+
+.numbers__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.numbers__item {
+    display: flex;
+    justify-content: center;
+}
+
+.numbers__item:not(:first-child) {
+    margin-left: 50px;
+}
+
+/* numbers */
+
+/* video */
+
+.video {
+    background-color: var(--bg-accent);
+    padding-top: 102px;
+    padding-bottom: 142px;
+    display: flex;
+    justify-content: center;$
+    align-items: center;
+}
+
+.video__content {
+    max-width: 540px;
+    position: relative;
+}
+
+.video__title {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin: 0 0 60px;
+}
+.video_desc {
+    margin: 0 0 60px;
+}
+
+.video_thumb {
+    display: flex;
+    margin-left: -280px; /* This is a bad practice but I just can't make it to be displayed to the left in a quick way.
+    max-width: calc(100% + 570px);
+}
+
+/* video */
+
+/* footer */
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: var(--color-accent);
+    color: var(--color-contrast);
+}
+.footer__name {
+    color: var(--color-contrast);
+    margin: 0 0 20px;
+    font-size: 21px;
+}
+
+.footer__copyright {
+    font-size: 13px;
+    margin: 0;
+}
+
+/* footer */
